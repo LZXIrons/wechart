@@ -1,0 +1,14 @@
+{
+  "pages":[
+    "pages/Validate/ValidateTel/ValidateTel",
+    "pages/Validate/ValidatePaper/ValidatePaper",
+    "pages/Validate/ValidateData/ValidateData"
+
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle":"black"
+  }
+}

@@ -1,0 +1,6 @@
+<include src="../Validate.wxml"></include>
+<view class="tel-bg" >
+    <input type="text" placeholder="请输入手机号码"></input>
+    <input type="text" placeholder="验证码"></input>
+    <view ></view>
+</view>

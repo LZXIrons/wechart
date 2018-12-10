@@ -1,0 +1,11 @@
+<!--pages/MyCenter/MyInfo/MyInfo.wxml-->
+<view class="my-info">
+
+    <form action="">
+        <view>
+            <label for="avatar"></label>
+            <image id="avatar" src="https://image.360lj.com/wechat/img/haha.jpg"></image>
+        </view>
+    </form>
+
+</view>

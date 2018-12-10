@@ -1,0 +1,14 @@
+@import "../Validate.wxss";
+.tel-bg{
+    width: 619rpx;
+    height: 512rpx;
+    margin:0 auto;
+    padding:0 55rpx;
+    box-sizing:border-box;
+    box-shadow:0rpx 15rpx 20rpx #99c1ff;
+    position:relative;
+    top:-20rpx;
+    background:#fff;
+    border-radius:5rpx;
+    
+}

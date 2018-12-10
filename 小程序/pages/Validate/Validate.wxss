@@ -1,0 +1,36 @@
+.validate-bg {
+    position: relative;
+    height: 400rpx;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+  }
+  .validate-bg > image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 400rpx;
+  }
+  .userinfo{
+    position: relative;
+    margin-top: -78rpx;
+  }
+  .user-pic {
+    width: 140rpx;
+    height: 140rpx;
+    border-radius: 15rpx;
+    overflow:hidden;
+  }
+  .nav-items {
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    position: absolute;
+    top: 301rpx;
+    color: #fff;
+    width: 495rpx;
+    margin: 0 auto;
+    font-size: 32rpx;
+  }
+  

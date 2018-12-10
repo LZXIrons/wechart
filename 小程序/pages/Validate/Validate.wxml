@@ -1,0 +1,13 @@
+<view class="validate-bg">
+    <image class="" src="../../../images/validate-bg.jpg"></image>
+    <view class="userinfo">
+        <view class="user-pic">
+            <open-data type="userAvatarUrl"></open-data>
+        </view>
+    </view>
+    <view class="nav-items">
+        <navigator class="" url="/pages/Validate/ValidateTel/ValidateTel">验证手机</navigator>
+        <navigator class="" url="/pages/Validate/ValidatePaper/ValidatePaper">证件认证</navigator>
+        <navigator class="" url="/pages/Validate/ValidateData/ValidateData">资料完善</navigator>
+    </view>
+</view>

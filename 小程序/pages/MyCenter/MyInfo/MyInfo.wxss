@@ -1,0 +1,9 @@
+/* pages/MyCenter/MyInfo/MyInfo.wxss */
+.my-info{
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background: #F3F3F3;
+    overflow-x: auto;
+}
+
