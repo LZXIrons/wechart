@@ -1,0 +1,16 @@
+<include src="../Validate.wxml"></include>
+<view class="common-form">
+    <view class="iconfont icon-sanjiao"></view>
+    <view class="tel-bg">
+        <view>
+            <input type="text" placeholder="请输入手机号码"></input>
+        </view>
+        <view>
+            <input type="text" placeholder="验证码"></input>
+            <text >获取验证码</text>
+        </view>
+        <view class="next">
+            <view type="submit" bindtap="nextView">下一步</view>
+        </view>
+    </view>
+</view>

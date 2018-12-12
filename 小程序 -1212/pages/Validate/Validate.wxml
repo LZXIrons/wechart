@@ -1,0 +1,13 @@
+<view class="validate-bg">
+    <image class="" src="../../../images/validate-bg.jpg"></image>
+    <view class="userinfo">
+        <view class="user-pic">
+            <open-data type="userAvatarUrl"></open-data>
+        </view>
+    </view>
+    <view class="nav-items">
+        <view class="{{isTel?'active':''}}">验证手机</view>
+        <view class="{{isPaper?'active':''}}">证件认证</view>
+        <view class="{{isData?'active':''}}">资料完善</view>
+    </view>
+</view>

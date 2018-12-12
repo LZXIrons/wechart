@@ -1,0 +1,111 @@
+<block wx:if="{{!isDepartment}}">
+    <include src="../Validate.wxml"></include>
+    <view class="common-form">
+        <view class="iconfont icon-sanjiao"></view>
+        <view class="paper-bg">
+            <view class="form-item upload">
+                <view>头像</view>
+                <view class="iconfont icon-jia" bindtap="chooseUserPic">
+                    <image wx:if="{{userPic!=null}}" src="{{userPic}}" />
+                </view>
+            </view>
+            <view class="form-item">
+                <view>姓名</view>
+                <view class="iconfont ">陈xx</view>
+            </view>
+            <view class="form-item">
+                <view>性别</view>
+                <view>
+                    <radio-group class="radio-group">
+                        <label class="radio radio-sex" wx:for="{{sex}}" wx:key="id">
+                            <view class="sex-btn iconfont icon-ico1 {{item.checked? 'on':''}}"></view>
+                            <radio value="{{item.value}}" checked="{{item.checked}}" bindtap="toggleClass" />
+                            {{item.value}}
+                        </label>
+                    </radio-group>
+                </view>
+            </view>
+            <view class="form-item">
+                <view>职称</view>
+                <view>
+                    <input type="text" placeholder="请输入"></input>
+                </view>
+            </view>
+            <view class="form-item">
+                <view>医院</view>
+                <view>
+                    <input type="text" placeholder="请输入"></input>
+                </view>
+            </view>
+            <view class="form-item">
+                <view>科室</view>
+                <view class="department">
+                    <view class="item">
+                        内科
+                        <text class="iconfont icon-guanbi"></text>
+                    </view>
+                    <view class="item">
+                        呼吸科
+                        <text class="iconfont icon-guanbi"></text>
+                    </view>
+                    <view class="add" bindtap="departmentView">+</view>
+                </view>
+            </view>
+            <view class="form-item">
+                <view>地区</view>
+                <view>
+                    <input type="text"></input>
+                </view>
+                <view class="iconfont icon-right"></view>
+            </view>
+            <view class="form-item">
+                <view>证件号</view>
+                <view>
+                    <input type="text"></input>
+                </view>
+            </view>
+            <view class="form-item upload">
+                <view>证照</view>
+                <view class="iconfont icon-jia" bindtap="choosePaperPic">
+                    <image wx:if="{{paperPic!=null}}" src="{{paperPic}}" />
+                </view>
+            </view>
+            <view class="form-item upload" style="border-bottom: none;">
+                <view>电子签名</view>
+                <view class="iconfont icon-jia" bindtap="chooseNamePic">
+                    <image wx:if="{{namePic!=null}}" src="{{namePic}}" />
+                </view>
+            </view>
+            <view class="next">
+                <view type="submit" bindtap="nextView">下一步</view>
+            </view>
+        </view>
+    </view>
+</block>
+<block wx:else>
+    <view class="clear-line"></view>
+    <view class="department-nav">
+        <view class="nav nav-left">
+            <scroll-view scroll-y="{{true}}" style="height:100%">
+                <view wx:for="{{navLeftItems}}" wx:key="index" data-index="{{index}}" bindtap="LeftTap" class="{{index==LeftIndex?'active':''}}">
+                    {{item.value}}
+                </view>
+            </scroll-view>
+        </view>
+        <view class="nav nav-right">
+            <form bindsubmit="sureItems">
+                <scroll-view scroll-y="{{true}}" style="height:720rpx">
+                    <checkbox-group bindchange="checkboxChange">
+                        <label class="checkbox" wx:for="{{navRightItems[LeftIndex].child}}" wx:key="index">
+                            {{item.value}}
+                            <checkbox value=" {{item.value}}" checked="{{item.checked}}" />
+                            <icon type="success" size="22" color="#2b84ff" wx:if="{{item.checked}}" />
+                        </label>
+                    </checkbox-group>
+                </scroll-view>
+                <button class="sure" formType="submit" bindtap="">确定</button>
+            </form>
+            <!-- <view class="sure" bindtap="sureItems">确定</view> -->
+        </view>
+    </view>
+</block>

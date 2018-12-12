@@ -1,0 +1,189 @@
+@import "../Validate.wxss";
+.common-form {
+  position: relative;
+  top: -30rpx;
+  font-size: 28rpx;
+  padding: 0 32rpx;
+  color: #666666;
+}
+.common-form .icon-sanjiao {
+  position: absolute;
+  color: #fff;
+  top: -38rpx;
+  left: 337rpx;
+  font-size: 68rpx;
+}
+.paper-bg {
+  margin: 0 auto;
+  padding: 0 20rpx 71rpx;
+  box-sizing: border-box;
+  box-shadow: 0rpx 2rpx 15rpx #99c1ff;
+  background: #fff;
+  border-radius: 8rpx;
+}
+.form-item.upload {
+  height: 170rpx;
+}
+.form-item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 91rpx;
+  border-bottom: 1rpx solid #e0e0e0;
+}
+.form-item > view:first-child {
+  width: 180rpx;
+}
+.paper-bg .icon-jia {
+  position: relative;
+  width: 121rpx;
+  height: 121rpx;
+  font-size: 115rpx;
+}
+.icon-jia image {
+  position: absolute;
+  left: 0;
+  width: 121rpx;
+  height: 121rpx;
+}
+.radio-sex {
+  position: relative;
+  width: 110rpx;
+  display: inline-block;
+}
+
+.radio-sex radio {
+  position: absolute;
+  left: 0;
+  width: 32rpx;
+  height: 34rpx;
+  opacity: 0;
+}
+.sex-btn {
+  display: inline-block;
+  font-size: 32rpx;
+}
+.sex-btn.on {
+  color: #2b84ff;
+}
+.paper-bg .icon-right {
+  position: absolute;
+  right: 0;
+  font-size: 38rpx;
+}
+/* 科室选择 */
+.department {
+  display: flex;
+  flex-wrap: wrap;
+}
+.department .add {
+  width: 102rpx;
+  font-size: 40rpx;
+  color: #2b84ff;
+  border-color: #2b84ff;
+}
+.department view.item {
+  position: relative;
+  height: 56rpx;
+  text-align: center;
+  font-size: 25rpx;
+  border: 2rpx solid #999999;
+  border-radius: 15rpx;
+  margin-right: 30rpx;
+  padding: 0 20rpx;
+  line-height: 56rpx;
+  box-sizing: border-box;
+}
+.department .icon-guanbi {
+  position: absolute;
+  font-size: 33rpx;
+  right: -16rpx;
+  top: -30rpx;
+  z-index: 2;
+}
+.clear-line {
+  height: 15rpx;
+  background: #f3f3f3;
+}
+.department-nav {
+  display: flex;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+}
+.department-nav .nav  view,
+.department-nav .nav  label {
+  height: 80rpx;
+  line-height: 80rpx;
+  font-size: 28rpx;
+}
+.department-nav .nav-left {
+  width: 42%;
+  background: #f7f8fc;
+}
+.department-nav .nav-left view{
+  padding-left: 50rpx;
+}
+.department-nav .nav-left .active{
+  background: #2b84ff;
+  color: #fff
+}
+.department-nav .nav-right {
+  width: 58%;
+  padding: 0 33rpx;
+}
+.department-nav .nav-right .active{
+  display: flex;
+  justify-content: space-between;
+  color: #2b84ff
+}
+.department-nav .nav-right .active>.icon-duihao{
+  width: 38rpx;
+  height: 38rpx;
+  color: #2b84ff;
+  font-size: 38rpx
+}
+.department-nav .nav-right  label {
+  position: relative;
+  display:flex;
+  align-items: center;
+  justify-content:space-between;
+  border-bottom: 2rpx solid #e0e0e0;
+}
+.department-nav .nav-right checkbox{
+opacity: 0;
+}
+.department-nav .nav-right icon{
+  height: 40rpx;
+}
+.department-nav .sure{
+  width: 300rpx;
+  height: 80rpx;
+  margin: 0 auto;
+  text-align: center;
+  color: #fff;
+  background: #2b84ff;
+  border-radius: 50rpx;
+  -webkit-border-radius: 50rpx;
+  -moz-border-radius: 50rpx;
+  -ms-border-radius: 50rpx;
+  -o-border-radius: 50rpx;
+}
+.next {
+  width: 578rpx;
+  height: 81rpx;
+  margin: 71rpx auto 0;
+  font-size: 30rpx;
+  border-radius: 50rpx;
+  text-align: center;
+  line-height: 81rpx;
+  color: #fff;
+  background: #2b84ff;
+}
+
+/* 滚动条 */
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  color: transparent;
+}

@@ -1,0 +1,154 @@
+/* pages/MyCenter/MyInfo/MyInfo.wxss */
+.my-info{
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background: #F3F3F3;
+    overflow-x: auto;
+}
+.form{
+    margin-top: 10rpx;
+    box-sizing: border-box;
+    padding: 30rpx;
+    background-color: #fff;
+}
+
+.form label,.user-name>input{
+    font-size: 28rpx;
+    color: #333333;
+    margin-right: 146rpx;
+}
+.avatar{
+    box-sizing: border-box;
+    padding: 30rpx 0;
+    height: 180rpx;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    border-bottom: 1rpx solid #E5E5E5;
+}
+.avatar>image{
+    width: 120rpx;
+    height: 120rpx;
+    line-height: 180rpx;
+    vertical-align: sub;
+}
+.avatar>.icon-jia{
+    font-size: 120rpx;
+    color: #999999;
+}
+.avatar>label{
+    margin-right: 115rpx !important;
+}
+.user-name{
+    height: 90rpx;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    border-bottom: 1rpx solid #E5E5E5;
+}
+
+.tag{
+    height:auto;
+    padding: 20rpx 0;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1rpx solid #F0F0F0;
+    padding-bottom: 40rpx;
+}
+.tag>label{
+    display: block;
+    margin: 0!important;
+}
+.tag-ctn{
+    width: 500rpx;
+}
+.tag-close{
+    font-size: 28rpx;
+    color: #999999;
+    display: inline-block;
+    display: flex;
+    flex-wrap: wrap;
+    float: right;
+    height: auto;
+}
+.tag-close>view{
+    padding: 0rpx 20rpx;
+    text-align: center;
+    height: 54rpx;
+    border: 1rpx solid #999999;
+    border-radius: 10rpx;
+    line-height: 54rpx;
+    margin-right: 15rpx;
+    margin-bottom: 15rpx;
+    position: relative;
+}
+.tag-close>view>text:last-child{
+    position: absolute;
+    top: -25rpx;
+    right: -15rpx;
+    font-size: 35rpx;
+    color: #999999;
+}
+
+.tag-add{
+    margin-top: 20rpx;
+    height: 54rpx;
+    width: 100%;
+    border: 1rpx solid #2B84FF;
+    display: flex;
+    justify-content: space-between;
+}
+.tag-add>text{
+    width: 100rpx;
+    height: 100%;
+    text-align: center;
+    background-color: #2B84FF;
+    color: #fff;
+    text-align: center;
+    line-height: 54rpx;
+}
+.tag-add>input{
+    display: block;
+    width: 100%;
+    height: 100%;
+    font-size: 30rpx;
+}
+
+.shanc{
+    height: 180rpx;
+    display: flex;
+    justify-content: space-between;
+    padding: 20rpx 0;
+    flex-wrap: nowrap;
+}
+.shanc>label{
+    margin: 0 !important;
+}
+.shanc>textarea{
+    float: right;
+    width: 500rpx;
+    height: 180rpx;
+    color: #666;
+    font-size: 32rpx;
+}
+
+.save-btn{
+    width: 580rpx;
+    height: 80rpx;
+    text-align: center;
+    color: #fff;
+    line-height: 80rpx;
+    font-size: 30rpx;
+    border-radius: 60rpx;
+    margin: 30rpx auto;
+    background-color: #2B84FF;
+    border: none;
+}
+
+.Show{
+    display: none;
+}
+.Hide{
+    display: none;
+}

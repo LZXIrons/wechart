@@ -1,0 +1,59 @@
+<view class="my-ctn">
+
+    <view>
+
+        <navigator url="../MyInfo/MyInfo"  class="head-ctn">
+
+            <view class="avatar">
+                <image src="./images/haha.jpg" aspectFill></image>
+            </view>
+
+            <view class="user-info">
+                <text class="user-name">陈某某   <text class="uncertified"></text></text>
+                <text>医生</text>
+            </view>
+
+            <view class="more">
+                <icon class="iconfont icon-right" style="font-size: 40rpx; color: #fff;"></icon>
+            </view>
+
+        </navigator>
+
+        <view class="option-ctn">
+
+            <navigator url="">
+                <icon class="item-icon1"></icon>
+                <text>我的二维码</text>
+                <icon class="iconfont icon-right"></icon>
+            </navigator>
+            <navigator url="">
+                <icon class="item-icon2"></icon>
+                <text>我的积分</text>
+                <icon class="iconfont icon-right"></icon>
+            </navigator>
+            <navigator url="">
+                <icon class="item-icon3"></icon>
+                <text>我开的处方</text>
+                <icon class="iconfont icon-right"></icon>
+            </navigator>
+            <navigator url="">
+                <icon class="item-icon4"></icon>
+                <text>我的药品库</text>
+                <icon class="iconfont icon-right"></icon>
+            </navigator>
+            <navigator url="">
+                <icon class="item-icon5"></icon>
+                <text>认证信息</text>
+                <icon class="iconfont icon-right"></icon>
+            </navigator>
+            <navigator url="">
+                <icon class="item-icon6"></icon>
+                <text>设置</text>
+                <icon class="iconfont icon-right"></icon>
+            </navigator>
+
+        </view>
+
+    </view>
+
+</view>

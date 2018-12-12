@@ -1,0 +1,58 @@
+@import "../Validate.wxss";
+.common-form {
+  position: relative;
+  top: -30rpx;
+  font-size: 28rpx;
+  padding: 0 32rpx;
+}
+.common-form .icon-sanjiao {
+  position: absolute;
+  color: #fff;
+  top: -38rpx;
+  left: 180rpx;
+  font-size: 68rpx;
+}
+.tel-bg {
+  height: 512rpx;
+  margin: 0 auto;
+  padding: 0 55rpx;
+  box-sizing: border-box;
+  box-shadow: 0rpx 2rpx 15rpx #99c1ff;
+  background: #fff;
+  border-radius: 8rpx;
+}
+.tel-bg view {
+  position: relative;
+}
+.tel-bg view > text {
+  position: absolute;
+  right: 0;
+  top: 77rpx;
+  width: 150rpx;
+  height: 60rpx;
+  background: #2b84ff;
+  color: #fff;
+  border-radius: 58rpx;
+  z-index: 2;
+  line-height: 60rpx;
+  text-align: center;
+  font-size:22rpx 
+}
+.tel-bg input {
+  height: 116rpx;
+  border-bottom: 1rpx solid #ccc;
+}
+.tel-bg input:first-child {
+  padding-top: 38rpx;
+}
+.next {
+  width: 578rpx;
+  height: 81rpx;
+  margin-top: 71rpx;
+  font-size: 30rpx;
+  border-radius: 50rpx;
+  text-align: center;
+  line-height: 81rpx;
+  color: #fff;
+  background: #2b84ff;
+}
